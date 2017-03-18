@@ -14,6 +14,17 @@
 		3635821D1E7C907200B3F70D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3635821B1E7C907200B3F70D /* LaunchScreen.storyboard */; };
 		363582281E7C907200B3F70D /* HotelBookingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582271E7C907200B3F70D /* HotelBookingViewTests.swift */; };
 		363582331E7C907200B3F70D /* HotelBookingViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582321E7C907200B3F70D /* HotelBookingViewUITests.swift */; };
+		363582431E7C963C00B3F70D /* PickerViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582411E7C963C00B3F70D /* PickerViewTableViewCell.swift */; };
+		363582441E7C963C00B3F70D /* PickerViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363582421E7C963C00B3F70D /* PickerViewTableViewCell.xib */; };
+		363582471E7C96CB00B3F70D /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582451E7C96CB00B3F70D /* DatePickerTableViewCell.swift */; };
+		363582481E7C96CB00B3F70D /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363582461E7C96CB00B3F70D /* DatePickerTableViewCell.xib */; };
+		3635824B1E7C975900B3F70D /* DescriptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582491E7C975900B3F70D /* DescriptionsTableViewCell.swift */; };
+		3635824C1E7C975900B3F70D /* DescriptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3635824A1E7C975900B3F70D /* DescriptionsTableViewCell.xib */; };
+		3635824F1E7CA20900B3F70D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3635824E1E7CA20900B3F70D /* HeaderView.xib */; };
+		363582511E7CA28200B3F70D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582501E7CA28200B3F70D /* HeaderView.swift */; };
+		363582541E7CA3C100B3F70D /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582521E7CA3C100B3F70D /* HeaderTableViewCell.swift */; };
+		363582551E7CA3C100B3F70D /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363582531E7CA3C100B3F70D /* HeaderTableViewCell.xib */; };
+		363582571E7CA65300B3F70D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582561E7CA65300B3F70D /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,17 @@
 		3635822E1E7C907200B3F70D /* HotelBookingViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotelBookingViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363582321E7C907200B3F70D /* HotelBookingViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelBookingViewUITests.swift; sourceTree = "<group>"; };
 		363582341E7C907200B3F70D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363582411E7C963C00B3F70D /* PickerViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerViewTableViewCell.swift; path = Cells/PickerViewTableViewCell.swift; sourceTree = "<group>"; };
+		363582421E7C963C00B3F70D /* PickerViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PickerViewTableViewCell.xib; path = Cells/PickerViewTableViewCell.xib; sourceTree = "<group>"; };
+		363582451E7C96CB00B3F70D /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerTableViewCell.swift; path = Cells/DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		363582461E7C96CB00B3F70D /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DatePickerTableViewCell.xib; path = Cells/DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		363582491E7C975900B3F70D /* DescriptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescriptionsTableViewCell.swift; path = Cells/DescriptionsTableViewCell.swift; sourceTree = "<group>"; };
+		3635824A1E7C975900B3F70D /* DescriptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescriptionsTableViewCell.xib; path = Cells/DescriptionsTableViewCell.xib; sourceTree = "<group>"; };
+		3635824E1E7CA20900B3F70D /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = Views/HeaderView.xib; sourceTree = "<group>"; };
+		363582501E7CA28200B3F70D /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Views/HeaderView.swift; sourceTree = "<group>"; };
+		363582521E7CA3C100B3F70D /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderTableViewCell.swift; path = Cells/HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		363582531E7CA3C100B3F70D /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableViewCell.xib; path = Cells/HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		363582561E7CA65300B3F70D /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "Extension/Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +119,9 @@
 		363582111E7C907200B3F70D /* HotelBookingView */ = {
 			isa = PBXGroup;
 			children = (
+				363582581E7CA65900B3F70D /* Extension */,
+				3635824D1E7CA1CB00B3F70D /* Views */,
+				363582401E7C95FA00B3F70D /* Cells */,
 				363582121E7C907200B3F70D /* AppDelegate.swift */,
 				363582141E7C907200B3F70D /* ViewController.swift */,
 				363582161E7C907200B3F70D /* Main.storyboard */,
@@ -123,6 +148,38 @@
 				363582341E7C907200B3F70D /* Info.plist */,
 			);
 			path = HotelBookingViewUITests;
+			sourceTree = "<group>";
+		};
+		363582401E7C95FA00B3F70D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				363582411E7C963C00B3F70D /* PickerViewTableViewCell.swift */,
+				363582421E7C963C00B3F70D /* PickerViewTableViewCell.xib */,
+				363582451E7C96CB00B3F70D /* DatePickerTableViewCell.swift */,
+				363582461E7C96CB00B3F70D /* DatePickerTableViewCell.xib */,
+				363582491E7C975900B3F70D /* DescriptionsTableViewCell.swift */,
+				3635824A1E7C975900B3F70D /* DescriptionsTableViewCell.xib */,
+				363582521E7CA3C100B3F70D /* HeaderTableViewCell.swift */,
+				363582531E7CA3C100B3F70D /* HeaderTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3635824D1E7CA1CB00B3F70D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3635824E1E7CA20900B3F70D /* HeaderView.xib */,
+				363582501E7CA28200B3F70D /* HeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		363582581E7CA65900B3F70D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				363582561E7CA65300B3F70D /* Date+Extension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3635824C1E7C975900B3F70D /* DescriptionsTableViewCell.xib in Resources */,
+				363582441E7C963C00B3F70D /* PickerViewTableViewCell.xib in Resources */,
 				3635821D1E7C907200B3F70D /* LaunchScreen.storyboard in Resources */,
 				3635821A1E7C907200B3F70D /* Assets.xcassets in Resources */,
+				363582551E7CA3C100B3F70D /* HeaderTableViewCell.xib in Resources */,
 				363582181E7C907200B3F70D /* Main.storyboard in Resources */,
+				363582481E7C96CB00B3F70D /* DatePickerTableViewCell.xib in Resources */,
+				3635824F1E7CA20900B3F70D /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3635824B1E7C975900B3F70D /* DescriptionsTableViewCell.swift in Sources */,
+				363582511E7CA28200B3F70D /* HeaderView.swift in Sources */,
+				363582431E7C963C00B3F70D /* PickerViewTableViewCell.swift in Sources */,
+				363582541E7CA3C100B3F70D /* HeaderTableViewCell.swift in Sources */,
 				363582151E7C907200B3F70D /* ViewController.swift in Sources */,
+				363582571E7CA65300B3F70D /* Date+Extension.swift in Sources */,
 				363582131E7C907200B3F70D /* AppDelegate.swift in Sources */,
+				363582471E7C96CB00B3F70D /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
