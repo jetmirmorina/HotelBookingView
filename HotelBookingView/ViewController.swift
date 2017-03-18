@@ -24,8 +24,15 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         
         registerCells()
-        tableView.tableFooterView = UIView()
+        costumizeView()
         days =  Array(1 ... self.totalDaysOfCurrentMonth()) as [Int]
+    }
+    @IBAction func search_TouchUpInside(_ sender: Any) {
+        let alertController = UIAlertController(title: "", message: "Hotel booking screen", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     func registerCells(){
@@ -33,6 +40,15 @@ class ViewController: UIViewController {
         tableView.register(UINib(nibName:"DescriptionsTableViewCell", bundle:nil), forCellReuseIdentifier: "DescriptionsTableViewCell")
         tableView.register(UINib(nibName:"PickerViewTableViewCell", bundle:nil), forCellReuseIdentifier: "PickerViewTableViewCell")
         tableView.register(UINib(nibName:"DatePickerTableViewCell", bundle:nil), forCellReuseIdentifier: "DatePickerTableViewCell")
+    }
+    
+    func costumizeView(){
+        tableView.backgroundColor = kMAIN_BG_COLOR
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0);
+        let tableviewFooter = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: self.view.frame.size.height/2))
+        tableviewFooter.backgroundColor = kSELECTED_CELL_BG_COLOR
+        tableView.tableFooterView = UIView()
+        checkoutDate = checkinDate.dateByAddingNumberOfDays(numberOfDays: numberOfNights)!
     }
     
     func totalDaysOfCurrentMonth()->Int{
@@ -70,6 +86,7 @@ extension ViewController:UITableViewDataSource{
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as! HeaderTableViewCell
@@ -138,29 +155,33 @@ extension ViewController:UITableViewDataSource{
         }
         return 210
     }
+    
+  
 }
-//MARK: - TableView Delegate -
+//MARK: - TableView Delegate
 extension ViewController:UITableViewDelegate{
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section != 0{
-            self.tableView.beginUpdates()
-            
+            tableView.deselectRow(at: indexPath, animated: true)
+            tableView.beginUpdates()
             if(selectedSection >= 0){
-                tableView.deleteRows(at: [NSIndexPath(item: 1, section: selectedSection) as IndexPath], with: UITableViewRowAnimation.fade)
+                tableView.deleteRows(at: [NSIndexPath(item: 1, section: selectedSection) as IndexPath], with: UITableViewRowAnimation.middle)
             }
             if(selectedSection != indexPath.section) {
                 selectedSection = indexPath.section;
-                tableView.insertRows(at: [NSIndexPath(item: 1, section: selectedSection) as IndexPath], with: .fade)
-                self.tableView.endUpdates()
+                tableView.insertRows(at: [NSIndexPath(item: 1, section: selectedSection) as IndexPath], with: .middle)
+                tableView.endUpdates()
             }
             else {
                 selectedSection = -1;
-                self.tableView.endUpdates()
+                tableView.endUpdates()
             }
         }
     }
+    
 }
 
+//MARK: - PickerView Methods
 extension ViewController:UIPickerViewDelegate, UIPickerViewDataSource{
   
     // DataSource
@@ -183,9 +204,11 @@ extension ViewController:UIPickerViewDelegate, UIPickerViewDataSource{
         }
         tableView.reloadData()
     }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let attributedString = NSAttributedString(string: "\(row+1)", attributes: [NSForegroundColorAttributeName : UIColor.white])
+        return attributedString
+    }
 }
 
-enum DatePickerTag:Int{
-    case checkinDateTag = 1
-    case chackOutTag = 2
-}
+

@@ -13,13 +13,15 @@ class DatePickerTableViewCell: UITableViewCell {
     @IBOutlet weak var datePicker: UIDatePicker!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        costumizeView()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+   
     
+    func costumizeView(){
+        datePicker.backgroundColor = kMAIN_BG_COLOR
+        datePicker.tintColor = UIColor.white
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
+        datePicker.datePickerMode = UIDatePickerMode.date
+    }
 }

@@ -19,20 +19,37 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel" translatesAutoresizingMaskIntoConstraints="NO" id="wA7-hs-s16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-overlay" translatesAutoresizingMaskIntoConstraints="NO" id="iKg-X6-3vC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiss Diamond Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mL-tR-0My">
+                        <rect key="frame" x="20" y="160" width="201.5" height="25.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="wA7-hs-s16" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0VA-hB-ZPw"/>
+                    <constraint firstItem="iKg-X6-3vC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ARW-GR-niA"/>
                     <constraint firstItem="wA7-hs-s16" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wih-D1-eGj"/>
-                    <constraint firstAttribute="bottom" secondItem="wA7-hs-s16" secondAttribute="bottom" constant="10" id="Xzy-nk-Fkr"/>
+                    <constraint firstAttribute="bottom" secondItem="wA7-hs-s16" secondAttribute="bottom" constant="20" id="Xzy-nk-Fkr"/>
                     <constraint firstAttribute="trailing" secondItem="wA7-hs-s16" secondAttribute="trailing" id="lRG-kn-PMR"/>
+                    <constraint firstAttribute="bottom" secondItem="iKg-X6-3vC" secondAttribute="bottom" constant="20" id="lsX-c5-CZV"/>
+                    <constraint firstItem="iKg-X6-3vC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mWc-r6-TYY"/>
+                    <constraint firstAttribute="trailing" secondItem="iKg-X6-3vC" secondAttribute="trailing" id="qi7-Vm-81l"/>
+                    <constraint firstAttribute="bottom" secondItem="9mL-tR-0My" secondAttribute="bottom" constant="34" id="snr-09-jtM"/>
+                    <constraint firstItem="9mL-tR-0My" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vEx-XG-jac"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="25" y="140"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="black-overlay" width="320" height="130"/>
         <image name="hotel" width="480" height="329"/>
     </resources>
 </document>

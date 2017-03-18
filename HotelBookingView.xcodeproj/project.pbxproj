@@ -24,7 +24,10 @@
 		363582511E7CA28200B3F70D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582501E7CA28200B3F70D /* HeaderView.swift */; };
 		363582541E7CA3C100B3F70D /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582521E7CA3C100B3F70D /* HeaderTableViewCell.swift */; };
 		363582551E7CA3C100B3F70D /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363582531E7CA3C100B3F70D /* HeaderTableViewCell.xib */; };
-		363582571E7CA65300B3F70D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582561E7CA65300B3F70D /* Date+Extension.swift */; };
+		3635825C1E7D38E500B3F70D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3635825B1E7D38E500B3F70D /* Constants.swift */; };
+		3635825E1E7D390400B3F70D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3635825D1E7D390400B3F70D /* Util.swift */; };
+		363582601E7D39EA00B3F70D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3635825F1E7D39EA00B3F70D /* Extensions.swift */; };
+		363582621E7D564C00B3F70D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363582611E7D564C00B3F70D /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,10 @@
 		363582501E7CA28200B3F70D /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Views/HeaderView.swift; sourceTree = "<group>"; };
 		363582521E7CA3C100B3F70D /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderTableViewCell.swift; path = Cells/HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		363582531E7CA3C100B3F70D /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderTableViewCell.xib; path = Cells/HeaderTableViewCell.xib; sourceTree = "<group>"; };
-		363582561E7CA65300B3F70D /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "Extension/Date+Extension.swift"; sourceTree = "<group>"; };
+		3635825B1E7D38E500B3F70D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
+		3635825D1E7D390400B3F70D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Constants/Util.swift; sourceTree = "<group>"; };
+		3635825F1E7D39EA00B3F70D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Extension/Extensions.swift; sourceTree = "<group>"; };
+		363582611E7D564C00B3F70D /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +125,12 @@
 		363582111E7C907200B3F70D /* HotelBookingView */ = {
 			isa = PBXGroup;
 			children = (
+				3635825A1E7D38CF00B3F70D /* Util */,
+				363582121E7C907200B3F70D /* AppDelegate.swift */,
+				363582591E7D367A00B3F70D /* ViewControllers */,
+				363582401E7C95FA00B3F70D /* Cells */,
 				363582581E7CA65900B3F70D /* Extension */,
 				3635824D1E7CA1CB00B3F70D /* Views */,
-				363582401E7C95FA00B3F70D /* Cells */,
-				363582121E7C907200B3F70D /* AppDelegate.swift */,
-				363582141E7C907200B3F70D /* ViewController.swift */,
 				363582161E7C907200B3F70D /* Main.storyboard */,
 				363582191E7C907200B3F70D /* Assets.xcassets */,
 				3635821B1E7C907200B3F70D /* LaunchScreen.storyboard */,
@@ -177,9 +184,27 @@
 		363582581E7CA65900B3F70D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				363582561E7CA65300B3F70D /* Date+Extension.swift */,
+				3635825F1E7D39EA00B3F70D /* Extensions.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		363582591E7D367A00B3F70D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				363582141E7C907200B3F70D /* ViewController.swift */,
+				363582611E7D564C00B3F70D /* NavigationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3635825A1E7D38CF00B3F70D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3635825B1E7D38E500B3F70D /* Constants.swift */,
+				3635825D1E7D390400B3F70D /* Util.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,7 @@
 				TargetAttributes = {
 					3635820E1E7C907200B3F70D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4RTEPGLG72;
 						ProvisioningStyle = Automatic;
 					};
 					363582221E7C907200B3F70D = {
@@ -322,13 +348,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3635824B1E7C975900B3F70D /* DescriptionsTableViewCell.swift in Sources */,
+				363582621E7D564C00B3F70D /* NavigationViewController.swift in Sources */,
 				363582511E7CA28200B3F70D /* HeaderView.swift in Sources */,
 				363582431E7C963C00B3F70D /* PickerViewTableViewCell.swift in Sources */,
 				363582541E7CA3C100B3F70D /* HeaderTableViewCell.swift in Sources */,
 				363582151E7C907200B3F70D /* ViewController.swift in Sources */,
-				363582571E7CA65300B3F70D /* Date+Extension.swift in Sources */,
 				363582131E7C907200B3F70D /* AppDelegate.swift in Sources */,
+				3635825E1E7D390400B3F70D /* Util.swift in Sources */,
 				363582471E7C96CB00B3F70D /* DatePickerTableViewCell.swift in Sources */,
+				363582601E7D39EA00B3F70D /* Extensions.swift in Sources */,
+				3635825C1E7D38E500B3F70D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +509,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTEPGLG72;
 				INFOPLIST_FILE = HotelBookingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetmirmorina.HotelBookingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -492,11 +525,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4RTEPGLG72;
 				INFOPLIST_FILE = HotelBookingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetmirmorina.HotelBookingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -573,6 +610,7 @@
 				363582391E7C907200B3F70D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3635823A1E7C907200B3F70D /* Build configuration list for PBXNativeTarget "HotelBookingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +619,7 @@
 				3635823C1E7C907200B3F70D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3635823D1E7C907200B3F70D /* Build configuration list for PBXNativeTarget "HotelBookingViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +628,7 @@
 				3635823F1E7C907200B3F70D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
